@@ -3,20 +3,18 @@ const path = require('path');
 module.exports = {
  devtool: 'inline-source-map',
 
- entry: './sloter/src/index.js',
-
  mode: 'development',
 
  resolve: {
   modules: [
-   path.resolve(__dirname, './src'),
-   path.resolve(__dirname, '../shared'),
+   'src',
+   path.resolve(__dirname, './shared'),
    'node_modules'
   ],
   // https://webpack.js.org/configuration/resolve/#resolveextensions
   extensions: ['.js', '.jsx'],
   alias: {
-   'components': path.resolve(__dirname, '../shared/components')
+   'components': path.resolve(__dirname, './shared/components')
   }
  },
 
