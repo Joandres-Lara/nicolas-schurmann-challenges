@@ -1,0 +1,31 @@
+{
+  "name": "nicolas-schurmann-challenges",
+  "version": "1.0.0",
+  "description": "Aplicación con tramos horarios en intervalos de 30 min, que empiece a las 8 a.m. y terminé a las 8 p.m. \r Disponilidad 8 motociclistas cada 30 minutos\r Si han tomados todos los motociclistas está caja de pondra en rojo",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:sloter": "node sloter/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Joandres-Lara/nicolas-schurmann-challenges"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
