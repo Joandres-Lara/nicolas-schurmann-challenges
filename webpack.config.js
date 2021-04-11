@@ -14,7 +14,8 @@ module.exports = {
   // https://webpack.js.org/configuration/resolve/#resolveextensions
   extensions: ['.js', '.jsx'],
   alias: {
-   'components': path.resolve(__dirname, './shared/components')
+   'components': path.resolve(__dirname, './shared/components'),
+   'shared': path.resolve(__dirname, './shared')
   }
  },
 
