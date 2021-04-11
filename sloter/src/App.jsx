@@ -1,15 +1,19 @@
-import { Provider as MotociclesProvider } from './contexts/motocicles';
-import { TableMotocicles } from './components/TableMotocicles';
+import { Provider as MotociclesProvider } from './contexts/motorcicles';
+import TableMotorcicles from './components/TableMotorcicles';
 import React from 'react';
+import GlobalStyle from 'shared/GlobalStyle';
 /**
  *
  * @returns {JSX.Element}
  */
 function App() {
  return (
-  <MotociclesProvider>
-   <TableMotocicles/>
-  </MotociclesProvider>
+  <React.Fragment>
+   <GlobalStyle/>
+   <MotociclesProvider>
+    <TableMotorcicles />
+   </MotociclesProvider>
+  </React.Fragment>
  )
 }
 
