@@ -3,17 +3,21 @@ const path = require('path');
 module.exports = {
  devtool: 'inline-source-map',
 
- entry: './src/index.js',
+ entry: './sloter/src/index.js',
 
  mode: 'development',
 
  resolve: {
   modules: [
-   path.resolve(__dirname, '../src'),
+   path.resolve(__dirname, './src'),
+   path.resolve(__dirname, '../shared'),
    'node_modules'
   ],
   // https://webpack.js.org/configuration/resolve/#resolveextensions
-  extensions: ['.js', '.jsx']
+  extensions: ['.js', '.jsx'],
+  alias: {
+   'components': path.resolve(__dirname, '../shared/components')
+  }
  },
 
  output: {
@@ -37,7 +41,7 @@ module.exports = {
 
  devServer: {
   disableHostCheck: true,
-  contentBase: path.resolve('./dist'),
+  contentBase: path.resolve(__dirname, './dist'),
   compress: true,
   liveReload: true,
   // https://webpack.js.org/configuration/dev-server/#devserverhistoryapifallback

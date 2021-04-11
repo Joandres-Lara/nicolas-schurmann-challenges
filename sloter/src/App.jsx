@@ -1,10 +1,15 @@
-import React from 'react'
-
+import { Provider as MotociclesProvider } from './contexts/motocicles';
+import { TableMotocicles } from './components/TableMotocicles';
+import React from 'react';
+/**
+ *
+ * @returns {JSX.Element}
+ */
 function App() {
  return (
-  <div>
-   <h1>Hello world!</h1>
-  </div>
+  <MotociclesProvider>
+   <TableMotocicles/>
+  </MotociclesProvider>
  )
 }
 
